@@ -1,0 +1,31 @@
+<!-- Adam Lucas -->
+<!-- 9/29/2022 -->
+
+<html>
+<head>
+	<!-- Applying CSS -->
+	<style type="text/css">
+		#square{
+			height: 100px; /*Setting height to 100px initially*/
+			width: 100px; /*Setting Width to 100px initially */
+			background-color: green; /*Setting div background to Green*/
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<!-- Making the click funtion -->
+	<div id="square" onclick="fun()"></div>
+    <!-- JavaScript Code -->
+	<script type="text/javascript">
+		<!-- Making the function -->
+		function fun() {
+			var x = document.getElementById('square');
+			var div_width = x.offsetWidth + (0.1 * x.offsetWidth)+"px";
+			var div_height = x.offsetHeight + (0.1 * x.offsetHeight)+"px";
+			x.style.width = div_width;
+			x.style.height = div_height;
+		}
+	</script>
+</body>
+</html>

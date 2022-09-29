@@ -1,0 +1,40 @@
+<!-- Adam Lucas -->
+<!-- 9/29/2022 -->
+
+<html>
+
+  <body>
+    <form>
+	<!-- Place to input first name-->
+      First name: <input type="text" name="first_name" />
+      <br />
+	  <!-- Place to input last name-->
+      Last name: <input type="text" name="last_name" />
+      <br />
+      <br />
+    </form>
+	<!-- Making a button-->
+    <button onclick="submitFunction()">Submit</button>
+
+    <p></p>
+  </body>
+
+<!-- JavaScript section-->
+  <script>
+    const inp = document.querySelector("input");
+
+    inp.addEventListener("mouseenter", function () {
+      inp.style.backgroundColor = "yellow";
+    });
+
+    inp.addEventListener("mouseleave", function () {
+      inp.style.backgroundColor = "white";
+    });
+
+    function submitFunction() {
+      const para = document.querySelector("p");
+
+      para.innerHTML = "Hi! " + inp.value;
+    }
+  </script>
+</html>
